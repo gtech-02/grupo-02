@@ -10,32 +10,49 @@
 </head>
 
 <body class="corpo">
-
     <header class="cabecalho">
         <div class="div-1">
-            <div class="logo-search">
-                <img src="imgs/logo-header.svg" alt="logo">
-                <form class="d-flex" role="search">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="imgs/logo-header.svg" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                    </a>
+                </div>
+            </nav>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+            <nav class="navbar bg-body-tertiary">
+                <form class="container-fluid justify-content-start">
+                    <a href="">cadastrar</a>
+                    <button class="btn btn-outline-success me-2" type="button">Main button</button>
                 </form>
-                <a href="">cadastrar</a>
-            </div>
-            <div class="cadastro-login">
-                <button class="button-login">entrar</button>
-            </div>
-            <div class="loja">
-                <img src="imgs/shopping_cart_24dp_FILL0_wght400_GRAD0_opsz24.svg">
-            </div>
+            </nav>
+            <img src="imgs/shopping_cart_24dp_FILL0_wght400_GRAD0_opsz24.svg">
         </div>
         <div class="div-2">
-            <nav class="nav-links">
-                <a href="">Home</a>
-                <a href="">Produtos</a>
-                <a href="">Categorias</a>
-                <a href="">Meus pedidos</a>
-            </nav>
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
         </div>
+
     </header>
     <!-- Inserção de slide de imgs (carrossel bootstrap) -->
     <div class="carrossel">
