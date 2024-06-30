@@ -42,6 +42,42 @@
 
 .carrossel{
     padding-bottom: 40px;
-    width: 1440px;
-    height: 681px;
+/*     width: 1440px;
+    height: 681px; */
 }
+
+/* Inicio css cards */
+.cards{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.card-botao{
+    position: relative;
+}
+
+.text-center button {
+    position: absolute;
+    top: 87%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #5e39ff;
+    color: white;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .text-center button:hover {
+    transition-duration: 1s;
+    background-color: black;
+    cursor: pointer;
+  }
+
+/* Fim cards */
