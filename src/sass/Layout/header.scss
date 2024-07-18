@@ -178,15 +178,6 @@
     color: var(--primary);
 }
 
-#home-link {
-    font-weight: 700;
-    color: var(--primary);
-}
-
-#home-link::after {
-    transform: scaleX(1);
-}
-
 .link-nav::after {
     content: "";
     position: absolute;

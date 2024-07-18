@@ -2,6 +2,7 @@ import menuIcon from '../../assets/Layout/Menu-icon.svg'
 import shopCart from '../../assets/Layout/shopp-cart.svg'
 import search from '../../assets/Layout/Search.svg'
 import Logo from './Logo'
+import { Link } from 'react-router-dom'
 
 export default function header() {
     return (
@@ -29,10 +30,10 @@ export default function header() {
             </form>
             <div className="nav-float">
                 <div className="nav-bottom">
-                    <a href="#" id="home-link" className="link-nav">Home</a>
-                    <a href="#" id="Produtos-link" className="link-nav">Produtos</a>
-                    <a href="#" id="Categorias-link" className="link-nav">Categorias</a>
-                    <a href="#" id="pedidos-link" className="link-nav">Meus Pedidos</a>
+                    <Link to="/" id="home-link" className="link-nav">Home</Link>
+                    <Link to="/Produtos" id="Produtos-link" className="link-nav">Produtos</Link>
+                    <Link to="/Categorias" id="Categorias-link" className="link-nav">Categorias</Link>
+                    <Link to="/MeusPedidos" id="pedidos-link" className="link-nav">Meus Pedidos</Link>
                 </div>
                 <div className="login-float">
                     <a className="entrar-float" href="#">Entrar</a>
