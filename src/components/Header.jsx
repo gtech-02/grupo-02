@@ -1,15 +1,17 @@
-import menuIcon from '../../assets/Layout/Menu-icon.svg'
-import shopCart from '../../assets/Layout/shopp-cart.svg'
-import search from '../../assets/Layout/Search.svg'
-import Logo from './Logo'
+import menuIcon from '../assets/Layout/Menu-icon.svg'
+import shopCart from '../assets/Layout/shopp-cart.svg'
+import search from '../assets/Layout/Search.svg'
+import Logo from './Logo.jsx'
 import { Link } from 'react-router-dom'
+
+
 
 export default function header() {
     return (
         <header className="cabecalho">
             <div className="nav-top">
                 <button className="menu-flutuante"><img src={menuIcon}/></button>
-                <Logo/>
+                <Logo color={"#C92071"} />
                 <form className="search">
                     <input className="search-input" placeholder="Pesquisar Produto..." id="search" />
                     <button className="search-button" value="" ><img src={search}/></button>

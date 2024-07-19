@@ -1,9 +1,9 @@
 import Layout from "./Layout";
 
-export default function ProductViewPage() {
+export default function Categorias() {
     return (
         <Layout>
-            <div>Pagina-de-produtos</div>
+            <div>Pagina-de-categorias</div>
         </Layout>
     )
 }
