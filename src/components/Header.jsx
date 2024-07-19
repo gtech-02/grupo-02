@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 export default function header() {
     return (
-        <header className="cabecalho">
+        <header>
             <div className="nav-top">
                 <button className="menu-flutuante"><img src={menuIcon}/></button>
                 <Logo color={"#C92071"} />
