@@ -1,17 +1,20 @@
 import './App.css'
-import Cards from './components/HomePage/Cards.jsx'
-import HomeCarrosel from './components/HomePage/Carrosel.jsx'
-import Layout from './components/Layout/Layout.jsx'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/home.jsx'
+import ProductViewPage from './pages/ProductView.jsx';
+import MeusPedidos from './pages/MeusPedidos.jsx';
+import Categorias from './pages/categorias.jsx';
+
 function App() {
   return (
-    <>
-      <Layout>
-        <main>
-          <HomeCarrosel />
-        </main>
-        <Cards />
-      </Layout>
-    </>
+    <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/produtos" element={<ProductViewPage />} />
+          <Route path="/MeusPedidos" element={<MeusPedidos />} />
+          <Route path="/Categorias" element={<Categorias />} />
+        </Routes>
+    </Router>
   )
 }
 

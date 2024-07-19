@@ -1,4 +1,4 @@
-import logoFooter from '../../assets/Layout/logo-footer.svg'
+import Logo from "./Logo.jsx"
 
 export default function Footer() {
     return (
@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="container__footer">
                 <div className="box__footer">
                     <div className="logo">
-                        <img className="img-footer" src={logoFooter} alt="logo digital college" /> {/*<!--imagem da logo-->*/}
+                    <Logo color={"#FFFFFF"} />
                     </div>
                     <div className="terms"> {/*<!-- descrição abaixo da logo -->*/}
                         <p>Digital College Store LTDA</p>
@@ -56,9 +56,9 @@ export default function Footer() {
                         <h2>Dispositivos</h2>
                         <hr />
                         <div className="footer-itens">
+                            <a href="#"><i className="fa-brands fa-android" ></i>Android</a>
                             <a href="#"><i className="fa-brands fa-windows"></i>Windows</a>
                             <a href="#"><i className="fa-brands fa-apple"></i>IOS e Macbook</a>
-                            <a href="#"><i className="fa-brands fa-android" ></i>Android</a>
                         </div>
                     </div>
                 </div>
