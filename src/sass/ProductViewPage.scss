@@ -11,8 +11,8 @@
         .carousel-inner,
         img {
             border-radius: 4px;
-            width: 52vw;
-            height: 40vw;
+            width: 48.62vw;
+            height: 39.584vw;
         }
 
         .carousel-indicators {
@@ -30,8 +30,28 @@
     }
 
     #BuyBox {
-        border: 1px solid black;
-        width: 32vw;
-        height: 40vw;
+        width: 35.8vw;
+        height: 39.584vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        button {
+            border: none;
+            border-radius: 10px;
+            width: 220px;
+            height: 48px;
+            background-color: var(--warning);
+            color: var(--white);
+            font-weight: bold;
+            transition: 0.8s;
+        }
+
+        button:hover {
+            background-color: var(--white);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+        }
+
     }
 }

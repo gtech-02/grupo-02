@@ -6,8 +6,8 @@ export default function ProductViewPage() {
     return (
         <Layout>
             <div id="ProductViewPage">
-            <Gallery/>
-            <BuyBox/>
+                <Gallery />
+                <BuyBox />
             </div>
         </Layout>
     )
