@@ -1,0 +1,37 @@
+#ProductViewPage {
+    display: flex;
+    padding: 34px 7.2222222% 34px 7.2222222%;
+    justify-content: space-between;
+    gap: 10px;
+
+    #Gallery {
+
+        margin-bottom: 40px;
+
+        .carousel-inner,
+        img {
+            border-radius: 4px;
+            width: 52vw;
+            height: 40vw;
+        }
+
+        .carousel-indicators {
+            position: static;
+            margin: 0;
+            justify-content: space-between;
+
+            img {
+                border-radius: 4px;
+                width: 8.20vw;
+                height: 6.8vw;
+            }
+
+        }
+    }
+
+    #BuyBox {
+        border: 1px solid black;
+        width: 32vw;
+        height: 40vw;
+    }
+}
