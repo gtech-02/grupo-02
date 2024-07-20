@@ -2,14 +2,15 @@
     display: flex;
     padding: 34px 7.2222222% 34px 7.2222222%;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
 
     #Gallery {
 
         margin-bottom: 40px;
 
-        .carousel-inner,
-        img {
+        .carousel-inner{
+            display: flex;
+            align-items: center;
             border-radius: 4px;
             width: 48.62vw;
             height: 39.584vw;

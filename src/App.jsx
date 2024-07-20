@@ -4,13 +4,15 @@ import HomePage from './pages/HomePage.jsx'
 import ProductViewPage from './pages/ProductViewPage.jsx';
 import MeusPedidos from './pages/MeusPedidos.jsx';
 import Categorias from './pages/categorias.jsx';
+import ProductListingPage from './pages/ProductListingPage.jsx';
 
 function App() {
   return (
     <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/produtos" element={<ProductViewPage />} />
+          <Route path="/produtos" element={<ProductListingPage />} />
+          <Route path="/produtos/:id" element={<ProductViewPage />} />
           <Route path="/MeusPedidos" element={<MeusPedidos />} />
           <Route path="/Categorias" element={<Categorias />} />
         </Routes>

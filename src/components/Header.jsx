@@ -4,8 +4,6 @@ import search from '../assets/Layout/Search.svg'
 import Logo from './Logo.jsx'
 import { NavLink } from 'react-router-dom'
 
-
-
 export default function header() {
     return (
         <header className="cabecalho">
