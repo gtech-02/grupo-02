@@ -1,8 +1,9 @@
 /* Inicio css cards */
 .cards {
     justify-content: center;
+    width: 100vw;
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding-bottom: 40px;
   
@@ -12,7 +13,7 @@
       .text-center button {
         position: absolute;
         top: 87%;
-        left: 15%;
+        left: 20%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         background-color: #5e39ff;
