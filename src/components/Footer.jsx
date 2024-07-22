@@ -1,12 +1,13 @@
+import 'https://kit.fontawesome.com/41bcea2ae3.js'
 import Logo from "./Logo.jsx"
 
-export default function Footer() {
+const Footer = () => {
     return (
         <footer>
             <div className="container__footer">
                 <div className="box__footer">
                     <div className="logo">
-                    <Logo color={"#FFFFFF"} />
+                        <Logo color={"var(--white)"} />
                     </div>
                     <div className="terms"> {/*<!-- descrição abaixo da logo -->*/}
                         <p>Digital College Store LTDA</p>
@@ -71,3 +72,5 @@ export default function Footer() {
         </footer >
     )
 }
+
+export default Footer

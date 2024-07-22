@@ -1,4 +1,4 @@
-export default function Cards() {
+const ProductCards = () => {
     return (
         <section>
             {/*<!-- Inicio cards -->*/}
@@ -31,3 +31,5 @@ export default function Cards() {
         </section>
     )
 }
+
+export default ProductCards
