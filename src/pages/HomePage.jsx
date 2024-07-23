@@ -10,7 +10,7 @@ const HomePage = () => {
             <HomeCarrosel/>
             <ProductCards/>
             <Section props={{title:"Produtos em alta", display:"flex", justfy:"space-between"}}>
-                <ProductListing/>
+                <ProductListing isHomepage={true}/>
             </Section>
         </Layout>
     )
