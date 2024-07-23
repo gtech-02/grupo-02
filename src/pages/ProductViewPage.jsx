@@ -9,7 +9,7 @@ const ProductViewPage = () => {
     return (
         <Layout>
             <div id="ProductViewPage">
-                <Gallery thumb lista={produtos}/>
+                <Gallery thumb lista={produtos} />
                 <BuyBox />
             </div>
             <Section props={{ title: "Produtos Relacionados", display: "flex", justfy: "space-between" }}>
