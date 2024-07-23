@@ -4,19 +4,18 @@ const ProductCards = () => {
     return (
         <>
             {/*<!-- Inicio cards -->*/}
-            <section>
-                <div className="cards">
+                <section className="cards">
                     {imgs.map(imagens => (
                         <div className="card-botao" key={imagens.id}>
                             <div className="text-center">
                                 <img src={imagens.src}
                                     className="rounded" alt="..." />
-                                <button>Comprar</button>
+                                <button><a href="/produtos" >Comprar</a></button>
+                                <span>30%OFF</span>
                             </div>
                         </div>
                     ))}
-                </div>
-            </section>
+                </section>
             {/* <!-- Fim cards --> */}
         </>
     )

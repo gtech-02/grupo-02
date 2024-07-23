@@ -43,8 +43,8 @@ const BuyBox = () => {
                 </div>
             </div>
             <div className="preco">
-                <span className="preco-desc"><span id="rs">R$</span>{product.preco}<span>,00</span></span>
-                <span className="preco-orig">{product.preco},00</span>
+                <span className="preco-desc"><span id="rs">R$</span>{product.preco}<span></span></span>
+                <span className="preco-orig">{product.preco}</span>
             </div>
             <div className="product-desc">Descrição do produto
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, accusantium voluptatibus. Numquam repudiandae pariatur non corrupti veniam temporibus porro facilis debitis, quo ipsam! Natus vitae ut in corrupti laborum. Totam.</p>
