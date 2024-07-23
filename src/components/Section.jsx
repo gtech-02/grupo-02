@@ -7,7 +7,7 @@ let Section = ({ children, props }) => {
             <div style={{ display: props.display, justifyContent:props.justfy}}>
                 <h3>{props.title}</h3>
                 <div>
-                    <a href='/produtos' >Ver todos<img src={line} /></a>
+                    <a style={{color:"var(--primary)", textDecoration:"none", display:"flex", gap:"10px"}} href='/produtos' >Ver todos<img src={line} /></a>
                 </div>
             </div>
             {children}
