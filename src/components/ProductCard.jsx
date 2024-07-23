@@ -7,9 +7,9 @@ const ProductCards = () => {
             <section>
                 <div className="cards">
                     {imgs.map(imagens => (
-                        <div className="card-botao">
+                        <div className="card-botao" key={imagens.id}>
                             <div className="text-center">
-                                <img src={imagens.img}
+                                <img src={imagens.src}
                                     className="rounded" alt="..." />
                                 <button>Comprar</button>
                             </div>

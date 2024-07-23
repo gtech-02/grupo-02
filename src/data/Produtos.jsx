@@ -1,12 +1,75 @@
 const produtos = [
-    { id: 1, nome: 'Produto 1', preco: 100, imagem: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/product-thumb-1.jpeg' },
-    { id: 2, nome: 'Produto 2', preco: 200, imagem: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/product-thumb-2.jpeg' },
-    { id: 3, nome: 'Produto 3', preco: 300, imagem: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/product-thumb-3.jpeg' },
-    { id: 4, nome: 'Produto 4', preco: 400, imagem: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/product-thumb-4.jpeg' },
-    { id: 5, nome: 'Produto 5', preco: 500, imagem: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-2.jpeg' },
-    { id: 6, nome: 'Produto 6', preco: 600, imagem: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-3.jpeg' },
-    { id: 7, nome: 'Produto 7', preco: 700, imagem: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-4.jpeg' },
-    { id: 8, nome: 'Produto 8', preco: 800, imagem: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-5.jpeg' },
+    {
+        id: 1,
+        nome: 'Produto 1',
+        preco: 99.99,
+        src: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/product-thumb-1.jpeg',
+        tamanho: [39, 41, 42],
+        cor: ["#6FEEFF", "#5E5E5E", "#6D70B7"],
+        star: 2.9
+    },
+    {
+        id: 2,
+        nome: 'Produto 2',
+        preco: 198.99,
+        src: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/product-thumb-2.jpeg',
+        tamanho: [39, 40, 41, 42],
+        cor: ["#6FEEFF", "#FF6969", "#5E5E5E",],
+        star: 3.4
+    },
+    {
+        id: 3,
+        nome: 'Produto 3',
+        preco: 254.99,
+        src: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/product-thumb-3.jpeg',
+        tamanho: [39, 41, 42],
+        cor: ["#6FEEFF", "#FF6969"],
+        star: 4.4
+    },
+    {
+        id: 4,
+        nome: 'Produto 4',
+        preco: 273.99,
+        src: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/product-thumb-4.jpeg',
+        tamanho: [39, 41, 42, 43],
+        cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
+        star: 4.7
+    },
+    {
+        id: 5,
+        nome: 'Produto 5',
+        preco: 337.99,
+        src: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-2.jpeg',
+        tamanho: [41, 42],
+        cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
+        star: 4.8
+    },
+    {
+        id: 6,
+        nome: 'Produto 6',
+        preco: 620.99,
+        src: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-3.jpeg',
+        tamanho: [39, 40, 41, 42, 43],
+        cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
+        star: 5
+    },
+    {
+        id: 7,
+        nome: 'Produto 7',
+        preco: 327.99,
+        src: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-4.jpeg',
+        tamanho: [39, 40, 41, 42],
+        cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
+        star: 4.6
+    },
+    {
+        id: 8,
+        nome: 'Produto 8',
+        preco: 299.99,
+        src: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-5.jpeg',
+        cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],tamanho: [39, 42], 
+        star: 4.4
+    },
     // Adicionar mais produtos conforme necessário
 ];
 
