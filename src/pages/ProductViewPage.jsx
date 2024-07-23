@@ -1,14 +1,22 @@
-import BuyBox from "../components/BuyBox";
-import Gallery from "../components/Gallery";
+import BuyBox from "../components/BuyBox.jsx";
+import Gallery from "../components/Gallery.jsx";
+import ProductListing from "../components/ProductListing.jsx";
+import Section from "../components/Section.jsx";
 import Layout from "./Layout";
+import produtos from "../data/Produtos.jsx";
 
-export default function ProductViewPage() {
+const ProductViewPage = () => {
     return (
         <Layout>
             <div id="ProductViewPage">
-                <Gallery />
+                <Gallery thumb lista={produtos} />
                 <BuyBox />
             </div>
+            <Section props={{ title: "Produtos Relacionados", display: "flex", justfy: "space-between" }}>
+                <ProductListing />
+            </Section>
         </Layout>
     )
 }
+
+export default ProductViewPage

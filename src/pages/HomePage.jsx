@@ -1,16 +1,22 @@
-import Cards from '../components/Cards.jsx'
-import HomeCarrosel from '../components/Carrosel.jsx'
-import GridProdutos from '../components/GridProdutos.jsx'
-import Layout from './Layout.jsx'
+import Gallery from "../components/Gallery"
+import ProductCards from "../components/ProductCard"
+import ProductListing from "../components/ProductListing"
+import Section from "../components/Section"
+import Layout from "./Layout"
 
-export default function HomePage() {
+
+const HomePage = () => {
     return (
-            <Layout>
-                <main>
-                    <HomeCarrosel />
-                </main>
-                <Cards />
-                <GridProdutos />
-            </Layout>
+        <Layout>
+            <main>
+                <Gallery />
+            </main>
+            <ProductCards />
+            <Section props={{ title: "Produtos em alta", display: "flex", justfy: "space-between" }}>
+                <ProductListing />
+            </Section>
+        </Layout>
     )
 }
+
+export default HomePage;

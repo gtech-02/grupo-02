@@ -1,15 +1,16 @@
-import menuIcon from '../assets/Layout/Menu-icon.svg'
-import shopCart from '../assets/Layout/shopp-cart.svg'
-import search from '../assets/Layout/Search.svg'
+import menuIcon from '../assets/Menu-icon.svg'
+import shopCart from '../assets/shopp-cart.svg'
+import search from '../assets/Search.svg'
 import Logo from './Logo.jsx'
 import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-export default function header() {
+const Header = () => {
     return (
         <header className="cabecalho">
             <div className="nav-top">
                 <button className="menu-flutuante"><img src={menuIcon} /></button>
-                <Logo color={"#C92071"} />
+                <Logo color={"var(--primary)"} />
                 <form className="search">
                     <input className="search-input" placeholder="Pesquisar Produto..." id="search" />
                     <button className="search-button" value="" ><img src={search} /></button>
@@ -32,8 +33,8 @@ export default function header() {
                 <div className="nav-bottom">
                     <NavLink to="/" className="link-nav">Home</NavLink>
                     <NavLink to="/Produtos" className="link-nav">Produtos</NavLink>
-                    <NavLink to="/Categorias" className="link-nav">Categorias</NavLink>
-                    <NavLink to="/MeusPedidos" className="link-nav">Meus Pedidos</NavLink>
+                    <Link to="/" className="link-nav">Categorias</Link>
+                    <Link to="/" className="link-nav">Meus Pedidos</Link>
                 </div>
                 <div className="login-float">
                     <a className="entrar-float" href="#">Entrar</a>
@@ -43,3 +44,5 @@ export default function header() {
         </header>
     )
 }
+
+export default Header
