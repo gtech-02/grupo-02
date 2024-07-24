@@ -1,15 +1,15 @@
 import React from 'react';
 
 
-const FilterGroup = ({ titulo, itens, formato }) => {
+const FilterGroup = ({ titulo, itens}) => {
   return (
     <div>
       <h6 className='mt-3 fw-bold'>{titulo}</h6>
       <div className="form-group">
-        {itens.map((item, index) => (
-          <div className="form-check" key={index}>
-            <input type="checkbox" className={`form-check-input ${formato}`} id={`item-${index}`} />
-            <label className="form-check-label" htmlFor={`item-${index}`}>{item}</label>
+        {itens.map((item, i) => (
+          <div className="form-check" key={i}>
+            <input type="checkbox" className={`form-check-input`} id={`item-${i}`} />
+            <label className="form-check-label" htmlFor={`item-${i}`}>{item}</label>
           </div>
         ))}
       </div>
