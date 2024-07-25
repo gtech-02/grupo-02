@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const FilterGroup = ({ titulo, itens}) => {
   return (
     <div>
