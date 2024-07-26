@@ -1,4 +1,6 @@
 import { useParams } from 'react-router-dom';
+import '../data/imgs.jsx';
+import imgs from '../data/imgs.jsx';
 
 const Gallery = (props) => {
 
@@ -52,6 +54,8 @@ const Gallery = (props) => {
     }
 
     const Slide = () => {
+        let imgsCarrossel = imgs.slice(3, 6);
+
         if (!props.thumb) {
             return (
                 <div id="carouselExampleCaptions" className="carousel slide" style={{ marginBottom: "40px" }}>
@@ -61,27 +65,14 @@ const Gallery = (props) => {
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <img src={"https://github.com/digitalcollegebr/projeto-digital-store/blob/main/public/home-slide-8.jpeg?raw=true"}
+                        {imgsCarrossel.map(imagens => (
+                            <div className="carousel-item active">
+                            <img src={imagens.src}
                                 className="d-block w-100" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
-                           
                             </div>
                         </div>
-                        <div className="carousel-item">
-                            <img src={"https://github.com/digitalcollegebr/projeto-digital-store/blob/main/public/home-slide-7.jpeg?raw=true"}
-                                className="d-block w-100" alt="..." />
-                            <div className="carousel-caption d-none d-md-block">
-                              
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <img src={"https://github.com/digitalcollegebr/projeto-digital-store/blob/main/public/home-slide-4.jpeg?raw=true"}
-                                className="d-block w-100" alt="..." />
-                            <div className="carousel-caption d-none d-md-block">
-                                
-                            </div>
-                        </div>
+                        ))};
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
