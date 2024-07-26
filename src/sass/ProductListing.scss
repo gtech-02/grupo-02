@@ -12,7 +12,9 @@
 }
 
 .botao-produto {
-    background-color:  #F6AA1C;
+    background-color: var(--warning);
+    text-align: center;
+    width: 200px;
     font-weight: 500;
     color: white;
     padding: 6px;
@@ -25,6 +27,6 @@
 .botao-produto:hover {
     opacity: 90%;
     background-color: white;
-    color: #F6AA1C;
+    color: var(--warning);
     border: 1px solid #F6AA1C;
 }
