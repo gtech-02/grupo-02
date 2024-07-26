@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import '../data/imgs.jsx';
 import imgs from '../data/imgs.jsx';
 
+
 const Gallery = (props) => {
 
     const Thumb = () => {
@@ -70,10 +71,12 @@ const Gallery = (props) => {
                             <img src={imagens.src}
                                 className="d-block w-100" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
+                            <a href="/produtos"><button className='ofertas' style={{backgroundColor: '#F6AA1C', cursor: 'pointer', width: 200, borderRadius: 20, fontSize: 25, color: 'white', fontWeight: 500}}>Ver ofertas</button></a>
                             </div>
                         </div>
                         ))};
                     </div>
+
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span className="visually-hidden">Previous</span>
