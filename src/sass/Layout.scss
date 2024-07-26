@@ -16,7 +16,7 @@
 }
 
 //Header
-Header {
+.cabecalho {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,10 +59,6 @@ Header {
         height: 100%;
         opacity: 4%;
         border-radius: 8px;
-    }
-
-    .searchsx {
-        display: none;
     }
 
     .search-input {
@@ -140,7 +136,7 @@ Header {
         cursor: pointer;
     }
 
-    .carrinho div {
+    .carrinho span {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -207,7 +203,7 @@ Header {
     }
 
     @media (max-width: 950px) {
-        Header {
+        .cabecalho {
             height: auto;
             padding: 25px 7.2222222% 25px 7.2222222%;
             justify-content: center;

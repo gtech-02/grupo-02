@@ -1,53 +1,27 @@
-import { useParams } from 'react-router-dom';
-import produtos from "../data/Produtos"
 
-const ProductOptions = () => {
 
-    const { id } = useParams();
-    const product = produtos.find(p => p.id === parseInt(id));
+const ProductOptions = ({ options, radius, shape }) => {
 
-    const FilterTm = () => {
-        const tamanho = [];
-        if (!product.tamanho) {
-            return <h2>Tamanhos não encontrados</h2>;
-        }
-        for (let i = 0; i < product.tamanho.length; i++) {
-            tamanho.push(
-                <li key={i}>{product.tamanho[i]}</li>
-            );
-        }
-        return tamanho;
-    }
-
-    const Filtercl = () => {
-        const cor = [];
-        if (!product.cor) {
-            return <h2>cor não encontrados</h2>;
-        }
-        for (let i = 0; i < product.cor.length; i++) {
-            cor.push(
-                <li key={i} style={{ backgroundColor: product.cor[i] }}></li>
-            );
-        }
-        return cor;
-    }
-
-    return (
-        <div className="productoptions">
-            <div className="tamanho">
-                <span>Tamanho</span>
-                <ul>
-                    <FilterTm />
+    if (shape === "square") {
+        return (
+            <>
+                <span className="Po-txt">Tamanho</span>
+                <ul className="ProductOptions">
+                    {options.map((opt, index) => <li className={shape} key={index} style={{ borderRadius: radius }}>{opt}</li>)}
                 </ul>
-            </div>
-            <div className="cor">
-                <span>Cor</span>
-                <ul>
-                    <Filtercl />
+            </>
+        )
+    }
+    if (shape === "circle") {
+        return (
+            <>
+                <span className="Po-txt">Cor</span>
+                <ul className="ProductOptions">
+                    {options.map((opt, index) => <li className={shape} key={index} style={{ backgroundColor: opt }}></li>)}
                 </ul>
-            </div>
-        </div>
-    )
+            </>
+        )
+    }
 }
 
 export default ProductOptions

@@ -8,10 +8,10 @@ import produtos from "../data/Produtos.jsx";
 const ProductViewPage = () => {
     return (
         <Layout>
-            <div id="ProductViewPage">
+            <main id="ProductViewPage">
                 <Gallery thumb lista={produtos} />
                 <BuyBox />
-            </div>
+            </main>
             <Section props={{ title: "Produtos Relacionados", display: "flex", justfy: "space-between" }}>
                 <ProductListing />
             </Section>
