@@ -9,6 +9,7 @@ const produtos = [
         star: 2.9,
         marca: 'Adidas',
         genero: 'Masculino'
+
     },
     {
         id: 2,
@@ -32,6 +33,7 @@ const produtos = [
         star: 4.4,
         marca: 'Adidas',
         genero: 'Feminino'
+
     },
     {
         id: 4,
@@ -43,6 +45,7 @@ const produtos = [
         star: 4.7,
         marca: 'Adidas',
         genero: 'Feminino'
+        
     },
     {
         id: 5,
