@@ -4,3 +4,27 @@
     gap: 20px;
     margin-bottom: 40px;
 }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botao-produto {
+    background-color:  #F6AA1C;
+    font-weight: 500;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    text-decoration: none;
+    word-break: keep-all;
+    transition: 0.3s;
+}
+
+.botao-produto:hover {
+    opacity: 90%;
+    background-color: white;
+    color: #F6AA1C;
+    border: 1px solid #F6AA1C;
+}

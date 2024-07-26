@@ -9,8 +9,8 @@ const ProductListing=()=> {
             <img src={produto.src} className="card-img-top" alt={produto.nome} />
             <div className="card-body">
               <h5 className="card-title">{produto.nome}</h5>
-              <p className="card-text">Preço: R$ {produto.preco.toFixed(2)}</p>
-              <a href={"/Produtos/" + produto.id} className="btn btn-primary">Ver Produto</a>
+              <p className="card-text">R$ {produto.preco.toFixed(2)}</p>
+              <a href={"/Produtos/" + produto.id} className="botao-produto">Ver Produto</a>
             </div>
           </div>
         ))}
