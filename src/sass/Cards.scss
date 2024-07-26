@@ -19,23 +19,23 @@
     @keyframes pulsar {
       0% {
         transform: scale(1);
-        color: red;
+        color: blue;
       }
 
       50% {
         transform: scale(1.2);
-        color: blue;
+        color: red;
       }
 
       100% {
         transform: scale(1);
-        color: red;
+        color: blue;
       }
     }
 
     span {
       font-weight: bold;
-      top: 10%;
+      top: 6%;
       right: 10%;
       position: absolute;
       font-size: 2rem;
