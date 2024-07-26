@@ -7,6 +7,7 @@ const produtos = [
         tamanho: [39, 41, 42],
         cor: ["#6FEEFF", "#5E5E5E", "#6D70B7"],
         star: 2.9,
+        tipo: "Tênis",
         marca: 'Adidas',
         genero: 'Masculino',
         descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
@@ -20,6 +21,7 @@ const produtos = [
         tamanho: [39, 40, 41, 42],
         cor: ["#6FEEFF", "#FF6969", "#5E5E5E",],
         star: 3.4,
+        tipo: "Tênis",
         marca: 'Nike',
         genero: 'Masculino',
         descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
@@ -33,6 +35,7 @@ const produtos = [
         tamanho: [39, 41, 42],
         cor: ["#6FEEFF", "#FF6969"],
         star: 4.4,
+        tipo: "Tênis",
         marca: 'Adidas',
         genero: 'Feminino',
         descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
@@ -46,6 +49,7 @@ const produtos = [
         tamanho: [39, 41, 42, 43],
         cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
         star: 4.7,
+        tipo: "Tênis",
         marca: 'Adidas',
         genero: 'Feminino',
         descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
@@ -59,6 +63,7 @@ const produtos = [
         tamanho: [41, 42],
         cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
         star: 4.8,
+        tipo: "Tênis",
         marca: 'Adidas',
         genero: 'Masculino',
         descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
@@ -71,6 +76,7 @@ const produtos = [
         tamanho: [39, 40, 41, 42, 43],
         cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
         star: 5,
+        tipo: "Tênis",
         marca: 'Nike',
         genero: 'Masculino',
         descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
@@ -83,6 +89,7 @@ const produtos = [
         tamanho: [39, 40, 41, 42],
         cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
         star: 4.6,
+        tipo: "Tênis",
         marca: 'Nike',
         genero: 'Feminino',
         descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
@@ -94,6 +101,7 @@ const produtos = [
         src: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-5.jpeg',
         cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],tamanho: [39, 42], 
         star: 4.4,
+        tipo: "Tênis",
         marca: 'Adidas',
         genero: 'Feminino',
         descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'

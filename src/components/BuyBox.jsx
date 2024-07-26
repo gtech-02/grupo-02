@@ -31,7 +31,7 @@ const BuyBox = () => {
         <div id="BuyBox">
             <div>
                 <h1>{product.nome}</h1>
-                <h2>Tipo | Marca | REF:{product.id}</h2>
+                <h2>{product.genero} | {product.marca} | REF:{product.id}</h2>
             </div>
             <div className="avaliacoes">
                 <div className="star">
