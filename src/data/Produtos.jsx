@@ -9,6 +9,7 @@ const produtos = [
         star: 2.9,
         marca: 'Adidas',
         genero: 'Masculino'
+        
     },
     {
         id: 2,
