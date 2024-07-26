@@ -17,7 +17,7 @@ const produtos = [
         id: 2,
         nome: 'Produto 2',
         preco: 198.99,
-        src: 'https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/product-thumb-2.jpeg',
+        src: 'https://imgnike-a.akamaihd.net/1920x1920/02321351A8.jpg',
         tamanho: [39, 40, 41, 42],
         cor: ["#6FEEFF", "#FF6969", "#5E5E5E",],
         star: 3.4,

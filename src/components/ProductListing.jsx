@@ -6,7 +6,7 @@ const ProductListing=()=> {
       <div className="card-container">
         {produtos.map(produto => (
           <div className="card" key={produto.id}>
-            <img src={produto.src} className="card-img-top" alt={produto.nome} />
+            <img src={produto.src} className="card-img-top tenis" alt={produto.nome} />
             <div className="card-body">
               <h5 className="card-title">{produto.nome}</h5>
               <p className="card-text">{produto.tipo} {produto.marca}</p>
