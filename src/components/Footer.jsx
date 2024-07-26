@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container__footer">
                 <div className="box__footer">
                     <div className="logo">
-                        <Logo color={"var(--white)"} />
+                        <Logo color={"var(--white)"} iconsize={"33px"}/>
                     </div>
                     <div className="terms"> {/*<!-- descrição abaixo da logo -->*/}
                         <p>Digital College Store LTDA</p>

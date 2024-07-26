@@ -49,7 +49,8 @@ const BuyBox = () => {
             <div className="product-desc">Descrição do produto
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, accusantium voluptatibus. Numquam repudiandae pariatur non corrupti veniam temporibus porro facilis debitis, quo ipsam! Natus vitae ut in corrupti laborum. Totam.</p>
             </div>
-            <ProductOptions />
+            <ProductOptions options={product.tamanho} shape={"square"} />
+            <ProductOptions options={product.cor} shape={"circle"} />
             <button>Comprar</button>
         </div>
     )
