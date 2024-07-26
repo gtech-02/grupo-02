@@ -54,8 +54,8 @@ const Gallery = (props) => {
     }
 
     const Slide = () => {
-        let imgsCarrossel = imgs.slice(3, 6);
-
+        let imgsCarrossel = imgs.slice(3,6);
+        
         if (!props.thumb) {
             return (
                 <div id="carouselExampleCaptions" className="carousel slide" style={{ marginBottom: "40px" }}>
