@@ -1,25 +1,26 @@
-import ProductListing from "../components/ProductListing"
-import Section from "../components/Section"
-import Layout from "./Layout"
-import FilterGroup from "../components/FilterGroup.jsx"
+import ProductListing from "../components/ProductListing";
+import Section from "../components/Section";
+import Layout from "./Layout";
+import Filter from "../components/FilterGroup.jsx";
+import filtro from '../data/filtros.js';
 
 const ProductListingPage = () => {
+    const filters = filtro.map((item, index) => (
+        <Filter key={index} titulo={item.titulo} itens={item.itens} />
+    ));
+
     return (
         <Layout>
-            <div className="container" style={{display: "flex", gap: "10px"}}>
-                <div className="row" style={{height: "20px"}}>
-                    <FilterGroup titulo={"Ordenar por:"} itens={["Menor Preço", "Maior Preço"]} />
-                    <FilterGroup titulo={"Marcas:"} itens={["Nike", "Adidas", "Puma", "Olympikus"]} />
-                    <FilterGroup titulo={"Categoria:"} itens={["Esporte", "Lazer", "Casual"]} />
-                    <FilterGroup titulo={"Gênero:"} itens={["Masculino", "Feminino", "Unisex"]} />
-                    <FilterGroup titulo={"Estado:"} itens={["Novo", "Usado"]} />
+            <div className="container" style={{ display: "flex", gap: "10px" }}>
+                <div className="row" style={{ height: "20px" }}>
+                    {filters}
                 </div>
                 <Section props={{ display: "none" }}>
                     <ProductListing />
                 </Section>
             </div>
-        </Layout >
-    )
-}
+        </Layout>
+    );
+};
 
-export default ProductListingPage
+export default ProductListingPage;

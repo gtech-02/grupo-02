@@ -19,23 +19,23 @@
     @keyframes pulsar {
       0% {
         transform: scale(1);
-        color: red;
+        color: blue;
       }
 
       50% {
         transform: scale(1.2);
-        color: blue;
+        color: red;
       }
 
       100% {
         transform: scale(1);
-        color: red;
+        color: blue;
       }
     }
 
     span {
       font-weight: bold;
-      top: 10%;
+      top: 6%;
       right: 10%;
       position: absolute;
       font-size: 2rem;
@@ -49,15 +49,15 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      background-color: #5e39ff;
+      background-color: var(--warning);
       padding: 8px 20px;
       border: none;
-      cursor: pointer;
       margin: 10px;
       border-radius: 5px;
 
       a {
         text-decoration: none;
+        font-weight: 500;
         color: var(--white);
         font-size: 16px;
       }
@@ -65,9 +65,12 @@
     }
 
     button:hover {
-      transition-duration: 1s;
-      background-color: black;
+      opacity: 90%;
+      background-color: white;
+      color: var(--warning);
+      border: 1px solid #F6AA1C;
       cursor: pointer;
+      a{color: var(--warning);}
     }
 
   }
