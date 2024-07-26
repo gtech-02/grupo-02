@@ -47,7 +47,7 @@ const BuyBox = () => {
                 <span className="preco-orig">{product.preco}</span>
             </div>
             <div className="product-desc">Descrição do produto
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, accusantium voluptatibus. Numquam repudiandae pariatur non corrupti veniam temporibus porro facilis debitis, quo ipsam! Natus vitae ut in corrupti laborum. Totam.</p>
+                <p>{product.descricao}</p>
             </div>
             <ProductOptions options={product.tamanho} shape={"square"} />
             <ProductOptions options={product.cor} shape={"circle"} />
