@@ -8,7 +8,8 @@ const produtos = [
         cor: ["#6FEEFF", "#5E5E5E", "#6D70B7"],
         star: 2.9,
         marca: 'Adidas',
-        genero: 'Masculino'
+        genero: 'Masculino',
+        descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
 
     },
     {
@@ -20,7 +21,8 @@ const produtos = [
         cor: ["#6FEEFF", "#FF6969", "#5E5E5E",],
         star: 3.4,
         marca: 'Nike',
-        genero: 'Masculino'
+        genero: 'Masculino',
+        descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
         
     },
     {
@@ -32,7 +34,8 @@ const produtos = [
         cor: ["#6FEEFF", "#FF6969"],
         star: 4.4,
         marca: 'Adidas',
-        genero: 'Feminino'
+        genero: 'Feminino',
+        descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
 
     },
     {
@@ -44,7 +47,8 @@ const produtos = [
         cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
         star: 4.7,
         marca: 'Adidas',
-        genero: 'Feminino'
+        genero: 'Feminino',
+        descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
         
     },
     {
@@ -56,7 +60,8 @@ const produtos = [
         cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
         star: 4.8,
         marca: 'Adidas',
-        genero: 'Masculino'
+        genero: 'Masculino',
+        descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
     },
     {
         id: 6,
@@ -67,7 +72,8 @@ const produtos = [
         cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
         star: 5,
         marca: 'Nike',
-        genero: 'Masculino'
+        genero: 'Masculino',
+        descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
     },
     {
         id: 7,
@@ -78,7 +84,8 @@ const produtos = [
         cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
         star: 4.6,
         marca: 'Nike',
-        genero: 'Feminino'
+        genero: 'Feminino',
+        descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
     },
     {
         id: 8,
@@ -88,7 +95,8 @@ const produtos = [
         cor: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],tamanho: [39, 42], 
         star: 4.4,
         marca: 'Adidas',
-        genero: 'Feminino'
+        genero: 'Feminino',
+        descricao: 'Um brinde aos novos começos entre você e as calçadas. Amarre os cadarços 100% reciclados e defina o ritmo ao começar sua corrida com a sensação de maciez do Nike Revolution 6 Next Nature.'
     },
     // Adicionar mais produtos conforme necessário
 ];
