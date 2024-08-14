@@ -7,7 +7,7 @@ let ImageModel = connection.define("Image", {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-            model: 'imagens',
+            model: 'products',
             key: 'id'
         },
         onDelete: 'CASCADE'

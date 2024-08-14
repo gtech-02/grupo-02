@@ -8,62 +8,37 @@ app.use(express.json());
 
 const UserController = require('./controllers/UserController');
 const ProductController = require('./controllers/ProductController');
+const CategoryController = require('./controllers/CategoryController');
 const UserCreateValidation = require("./middleware/UserCreateValidation");
 const JwtVerifyToken = require('./middleware/JwtVerifyToken');
 
 const PrivateRoutes = express.Router();
 PrivateRoutes.use(JwtVerifyToken);
 
-app.get('/products', ProductController.list);
-PrivateRoutes.post('/products',ProductController.create);
-app.get('/users', UserController.list);
- 
-PrivateRoutes.post('/users', UserCreateValidation, UserController.create);
+
+
+//USUARIOS
 app.post('/login', UserController.login);
+app.get('/users', UserController.list);
+app.get('/users', UserController.listUm);
+PrivateRoutes.post('/users', UserCreateValidation, UserController.create);
 PrivateRoutes.put('/users/:id', UserController.update);
-PrivateRoutes.delete('/users/:id', UserController.delete);
+PrivateRoutes.delete('/users/:id', UserController.deleteUm);
+PrivateRoutes.delete('/users/', UserController.deleteTodos);
+
+
+//PRODUTOS
+app.get('/products', ProductController.list);
+app.get('/products', ProductController.listUm);
+PrivateRoutes.post('/products', UserCreateValidation, ProductController.create);
+PrivateRoutes.put('/products/:id', ProductController.update);
+PrivateRoutes.delete('/products/', ProductController.deleteTodos);
+PrivateRoutes.delete('/products/:id', ProductController.deleteUm);
+
+//CATEGORIA
+PrivateRoutes.post('/category', CategoryController.create);
+PrivateRoutes.delete('/category/:id', CategoryController.deleteUm);
 
 
 app.use(PrivateRoutes);
 app.listen(3000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const UserController = require('./controllers/UserController');
-
-// const request = {
-//     body: {
-//         firstname: "Joaquim",
-//         surname: "Silva",
-//         email: "joaqui@mail.com",
-//         password: "1234",
-//     }
-// }
-
-// UserController.create(request);
-// UserController.list();
-
-
-
-// const ProductController = require('./controllers/ProductController');
-
-// const request = {
-//     body: {
-//         name: "Motorola",
-//         price: 19.58,
-//         description: "Descrição do produto"
-//     }
-// }
-
-// // ProductController.create(request);
-// ProductController.list();
