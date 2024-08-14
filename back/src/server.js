@@ -26,7 +26,6 @@ PrivateRoutes.put('/users/:id', UserController.update);
 PrivateRoutes.delete('/users/:id', UserController.deleteUm);
 PrivateRoutes.delete('/users/', UserController.deleteTodos);
 
-
 //PRODUTOS
 app.get('/products', ProductController.list);
 app.get('/products', ProductController.listUm);
@@ -36,9 +35,12 @@ PrivateRoutes.delete('/products/', ProductController.deleteTodos);
 PrivateRoutes.delete('/products/:id', ProductController.deleteUm);
 
 //CATEGORIA
+app.get('/category', CategoryController.list);
+app.get('/category', CategoryController.listUm);
 PrivateRoutes.post('/category', CategoryController.create);
+PrivateRoutes.put('/category/:id', CategoryController.update);
 PrivateRoutes.delete('/category/:id', CategoryController.deleteUm);
-
+PrivateRoutes.delete('/category/', CategoryController.deleteTodos);
 
 app.use(PrivateRoutes);
 app.listen(3000);
