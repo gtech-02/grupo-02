@@ -30,6 +30,8 @@
         }
     }
 
+    
+
     #BuyBox {
         width: 35.8vw;
         height: 39.584vw;
@@ -56,16 +58,18 @@
 
             .star {
                 display: flex;
+                align-items: center;
                 gap: 4px;
             }
 
             .qtd-star-av {
                 display: flex;
                 gap: 10px;
-                
+
                 .qtd-star {
                     display: flex;
                     align-items: center;
+                    justify-content: center;
                     gap: 10px;
                     width: 63px;
                     height: 23px;
@@ -86,12 +90,12 @@
 
         }
 
-        .preco{
+        .preco {
             display: flex;
             align-items: baseline;
             gap: 5px;
 
-            .preco-desc{
+            .preco-desc {
                 display: flex;
                 align-items: baseline;
                 gap: 2px;
@@ -101,12 +105,12 @@
                 letter-spacing: 1px;
                 color: var(--dark-gray-2);
 
-                #rs{
+                #rs {
                     font-weight: 400;
                     line-height: 28px;
                 }
 
-                span{
+                span {
                     font-size: 16px;
                     line-height: 24px;
                     letter-spacing: 0.75px;
@@ -115,7 +119,7 @@
                 }
             }
 
-            .preco-orig{
+            .preco-orig {
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 28px;
@@ -125,14 +129,14 @@
             }
         }
 
-        .product-desc{
+        .product-desc {
             font-weight: 700;
             font-size: 14px;
             line-height: 22px;
             letter-spacing: 0.75px;
             color: var(--light-gray);
 
-            p{
+            p {
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 22px;
@@ -142,53 +146,48 @@
 
         }
 
-        .productoptions{
-            .tamanho,.cor{
+        .Po-txt{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.75px;
+            color: var(--light-gray);
+        }
+        .ProductOptions {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            justify-content: left;
+            margin: 0;
+            padding: 0;
+
+            li:hover{
+                border: 2px solid var(--primary);
+            }
+
+            .square{
                 display: flex;
-                flex-direction: column;
-                gap: 5px;
-                ul{
-                    display: flex;
-                    gap: 10px;
-                    list-style: none;
-                    justify-content: left;
-                    padding: 0;
-                }
+                justify-content: center;
+                align-items: center;
+                width: 48px;
+                height: 48px;
+                border-radius: 4px;
+                border: 1px solid var(--light-gray-2);
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.75px;
+                color: var(--dark-gray-2);
+                cursor: pointer;
             }
 
-            .tamanho{
-                li{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 48px;
-                    height: 48px;
-                    border-radius: 4px;
-                    border: 1px solid var(--light-gray);
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 24px;
-                    letter-spacing: 0.75px;
-                    color: var(--dark-gray-2);
-                    cursor: pointer;
-                    transition: 0.5s;
-                }
-                li:hover{
-                    background-color: var(--primary);
-                    color: var(--white);
-                }
+            .circle{
+                width: 31px;
+                height: 31px;
+                border-radius: 50%;
+                cursor: pointer;
             }
 
-            .cor{
-
-                li{
-                    width: 31px;
-                    height: 31px;
-                    border-radius: 50%;
-                    cursor: pointer;
-                }
-
-            }
 
         }
 

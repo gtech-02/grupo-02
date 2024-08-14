@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    height: 192px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 34px 7.22222222% 34px 7.2222222%;
+}
+
+.div-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-search{
+    width: 993px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.logo-search img{
+    width: 253px;
+    height: 44px;
+}
+
+.d-flex{
+    width: 709px;
+    height: 60px;
+}
+
+.form-control{
+    width: 559px;
+    height: 60px;
+
+}
+
+.carrossel{
+    padding-bottom: 40px;
+/*     width: 1440px;
+    height: 681px; */
+}
+
+/* Inicio css cards */
+.cards{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.card-botao{
+    position: relative;
+}
+
+.text-center button {
+    position: absolute;
+    top: 87%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #5e39ff;
+    color: white;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .text-center button:hover {
+    transition-duration: 1s;
+    background-color: black;
+    cursor: pointer;
+  }
+
+/* Fim cards */

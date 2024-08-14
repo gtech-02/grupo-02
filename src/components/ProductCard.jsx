@@ -1,22 +1,23 @@
 import imgs from "../data/imgs.jsx";
 
 const ProductCards = () => {
+let imgsCards = imgs.slice(0, 3)
+
     return (
         <>
             {/*<!-- Inicio cards -->*/}
-            <section>
-                <div className="cards">
-                    {imgs.map(imagens => (
-                        <div className="card-botao">
+                <section className="cards">
+                    {imgsCards.map(imagens => (
+                        <div className="card-botao" key={imagens.id}>
                             <div className="text-center">
-                                <img src={imagens.img}
+                                <img src={imagens.src}
                                     className="rounded" alt="..." />
-                                <button>Comprar</button>
+                                <button><a href="/produtos" >Comprar</a></button>
+                                <span>30%OFF</span>
                             </div>
                         </div>
                     ))}
-                </div>
-            </section>
+                </section>
             {/* <!-- Fim cards --> */}
         </>
     )
