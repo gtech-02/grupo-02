@@ -50,16 +50,17 @@ const UserController = {
 
     async list(request, response) {
         const users = await UserModel.findAll();
-
-        /*const products = await ProductModel.findAll({
-            where: {
-                user_id: users.id
-            }
-        });
-
-        users.setDataValue('products', products);*/
-
         return response.json(users);
+    },
+
+    async listUm(request, response){
+        let id = request.params.id;
+        const user = await UserModel.findOne({
+            where:{
+                id: id
+            }
+        })
+        return response.json(user);
     },
 
     async update(request, response) {
@@ -74,7 +75,18 @@ const UserController = {
         });
     },
 
-    async delete (request, response) {
+
+    async deleteTodos(request, response){
+        await UserModel.destroy({
+            where: {
+
+            }
+        })
+        return response.json('Todos os usuários foram deletados com sucesso');
+
+    },
+
+    async deleteUm (request, response) {
         let id = request.params.id;
         UserModel.destroy({
             where: { id }
