@@ -6,4 +6,3 @@ require('../models/ProductModel');
 require('../models/ProductCategoryModel');
 
 connection.sync({ force: true });
-
