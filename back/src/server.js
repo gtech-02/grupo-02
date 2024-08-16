@@ -32,6 +32,8 @@ app.get('/products', ProductController.list);
 app.get('/products', ProductController.listUm);
 PrivateRoutes.post('/products', UserCreateValidation, ProductController.create);
 PrivateRoutes.put('/products/:id', ProductController.update);
+
+
 PrivateRoutes.delete('/products/', ProductController.deleteTodos);
 PrivateRoutes.delete('/products/:id', ProductController.deleteUm);
 

@@ -3,6 +3,7 @@ const { DataTypes } = require('sequelize');
 const ProductModel = require('./ProductModel');
 
 let ImageModel = connection.define("Image", {
+
     product_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -18,7 +19,7 @@ let ImageModel = connection.define("Image", {
         defaultValue: 0
 
     }, path: {
-        type: DataTypes.STRING(200),
+        type: DataTypes.STRING(255),
         allowNull: false
     }
     });
