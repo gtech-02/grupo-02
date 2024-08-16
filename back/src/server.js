@@ -11,6 +11,7 @@ const ProductController = require('./controllers/ProductController');
 const CategoryController = require('./controllers/CategoryController');
 const UserCreateValidation = require("./middleware/UserCreateValidation");
 const JwtVerifyToken = require('./middleware/JwtVerifyToken');
+const ImageController = require('./controllers/ImageController');
 
 const PrivateRoutes = express.Router();
 PrivateRoutes.use(JwtVerifyToken);
@@ -29,23 +30,26 @@ app.get('/products', ProductController.list);
 app.get('/products/:id', ProductController.listUm);
 PrivateRoutes.post('/products', ProductController.create);
 PrivateRoutes.put('/products/:id', ProductController.update);
-
-
 PrivateRoutes.delete('/products/', ProductController.deleteTodos);
 PrivateRoutes.delete('/products/:id', ProductController.deleteUm);
 
 //CATEGORIA
 app.get('/category', CategoryController.list);
-<<<<<<< HEAD
-app.get('/category', CategoryController.listUm);
-PrivateRoutes.post('/category', UserCreateValidation, CategoryController.create);
-=======
 app.get('/category/:id', CategoryController.listUm);
 PrivateRoutes.post('/category', CategoryController.create);
->>>>>>> victor
 PrivateRoutes.put('/category/:id', CategoryController.update);
 PrivateRoutes.delete('/category/:id', CategoryController.deleteUm);
 PrivateRoutes.delete('/category/', CategoryController.deleteTodos);
+
+
+//IMAGENS
+app.get('/images', ImageController.listar);
+app.get('/images', ImageController.listarUm);
+PrivateRoutes.post('images', ImageController.imageCreate);
+PrivateRoutes.put('images', ImageController.alterar);
+PrivateRoutes.delete('image', ImageController.deletarUm);
+PrivateRoutes.delete('images', ImageController.deletarTudo);
+
 
 app.use(PrivateRoutes);
 app.listen(3000);

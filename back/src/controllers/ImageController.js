@@ -72,7 +72,7 @@ const ImageController = {
 
     },
 
-    async deletarUma(request, response){
+    async deletarUm(request, response){
         let id = request.params.id;
         await ImageModel.destroy({
             where:{
