@@ -15,8 +15,6 @@ const JwtVerifyToken = require('./middleware/JwtVerifyToken');
 const PrivateRoutes = express.Router();
 PrivateRoutes.use(JwtVerifyToken);
 
-
-
 //USUARIOS
 app.post('/login', UserController.login);
 app.get('/users', UserController.list);
@@ -37,7 +35,7 @@ PrivateRoutes.delete('/products/:id', ProductController.deleteUm);
 //CATEGORIA
 app.get('/category', CategoryController.list);
 app.get('/category', CategoryController.listUm);
-PrivateRoutes.post('/category', CategoryController.create);
+PrivateRoutes.post('/category', UserCreateValidation, CategoryController.create);
 PrivateRoutes.put('/category/:id', CategoryController.update);
 PrivateRoutes.delete('/category/:id', CategoryController.deleteUm);
 PrivateRoutes.delete('/category/', CategoryController.deleteTodos);

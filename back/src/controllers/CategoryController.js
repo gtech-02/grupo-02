@@ -4,12 +4,17 @@ const jwt = require('jsonwebtoken');
 
 const CategoryController = {
     async create(request, response) {
-        CategoryModel.create(request.body);
-        messageReturn = 'Categoria criada com sucesso!'
-        response.status(201);
-        return response.json({
-            message: messageReturn
-        });
+        try {
+            CategoryModel.create(request.body);
+            response.status(201);
+            return response.json({
+                message: messageReturn
+            })
+        } catch(error){
+            return response.json({
+                message: "Erro encontrado"
+            })
+        }
     },
 
 
@@ -18,10 +23,10 @@ const CategoryController = {
         return response.json(category);
     },
 
-    async listUm(request, response){
+    async listUm(request, response) {
         let id = request.params.id;
         const user = await CategoryModel.findOne({
-            where:{
+            where: {
                 id: id
             }
         })
@@ -30,7 +35,7 @@ const CategoryController = {
 
     async update(request, response) {
         let id = request.params.id;
-        
+
         CategoryModel.update(request.body, {
             where: { id } // id: id
         });
@@ -40,7 +45,7 @@ const CategoryController = {
         });
     },
 
-    async deleteUm (request, response) {
+    async deleteUm(request, response) {
         let id = request.params.id;
         CategoryModel.destroy({
             where: { id }
@@ -49,9 +54,9 @@ const CategoryController = {
         return response.json({
             message: "Categoria deletada com sucesso"
         })
-    }, 
+    },
 
-    async deleteTodos(request, response){
+    async deleteTodos(request, response) {
         await CategoryModel.destroy({
             where: {
 
