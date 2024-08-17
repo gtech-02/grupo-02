@@ -1,36 +1,37 @@
 const connection = require('../database/connection');
 const { DataTypes } = require('sequelize');
-const UserModel = require('./UserModel');
 
 const ProductModel = connection.define("Product", {
-    user_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        references: {
-            model: 'users',
-            key: 'id'
-        },
-        onDelete: 'CASCADE'
-    },
-    name: {
-        type: DataTypes.STRING(255),
-        allowNull: false
-    },
-    description: DataTypes.TEXT,
-    price: {
-        type: DataTypes.DECIMAL(5,2),
-        allowNull: false
-    },
-    price_with_discount: DataTypes.DECIMAL(5,2),
     enabled: {
         type: DataTypes.BOOLEAN,
+        defaultValue: false,
+    },
+    name: {
+        type: DataTypes.STRING(50),
         allowNull: false,
-        defaultValue: 0
+    },
+    slug: {
+        type: DataTypes.STRING(255),
+        allowNull: false,
+    },
+    use_in_menu: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false,
     },
     stock: {
         type: DataTypes.INTEGER,
+        defaultValue: 0,
+    },
+    description: {
+        type: DataTypes.STRING(255),
+    },
+    price: {
+        type: DataTypes.FLOAT(5,2),
         allowNull: false,
-        defaultValue: 0
+    },
+    price_with_discount: {
+        type: DataTypes.FLOAT(5,2),
+        allowNull: false,
     }
 });
 

@@ -1,6 +1,3 @@
-const dotenv = require('dotenv');
-dotenv.config();
-
 const express = require('express');
 const app = express();
 
@@ -15,13 +12,11 @@ const JwtVerifyToken = require('./middleware/JwtVerifyToken');
 const PrivateRoutes = express.Router();
 PrivateRoutes.use(JwtVerifyToken);
 
-
-
 //USUARIOS
+app.post('/users', UserCreateValidation, UserController.create);
 app.post('/login', UserController.login);
 app.get('/users', UserController.list);
-app.get('/users', UserController.listUm);
-PrivateRoutes.post('/users', UserCreateValidation, UserController.create);
+PrivateRoutes.get('/users/:id', UserController.listUm);
 PrivateRoutes.put('/users/:id', UserController.update);
 PrivateRoutes.delete('/users/:id', UserController.deleteUm);
 PrivateRoutes.delete('/users/', UserController.deleteTodos);
