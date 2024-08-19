@@ -1,6 +1,6 @@
 const { Sequelize } = require("sequelize");
 
-require('dotenv').config(); 
+require('dotenv').config();
 
 const connection = new Sequelize({
     dialect: process.env.DB_DRIVE,
