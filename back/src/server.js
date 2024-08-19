@@ -1,6 +1,3 @@
-const dotenv = require('dotenv');
-dotenv.config();
-
 const express = require('express');
 const app = express();
 
@@ -17,39 +14,30 @@ const PrivateRoutes = express.Router();
 PrivateRoutes.use(JwtVerifyToken);
 
 //USUARIOS
+app.post('/users', UserCreateValidation, UserController.create);
 app.post('/login', UserController.login);
 app.get('/users', UserController.list);
-app.get('/users/:id', UserController.listUm);
-app.post('/users', UserCreateValidation, UserController.create);
+PrivateRoutes.get('/users/:id', UserController.listUm);
 PrivateRoutes.put('/users/:id', UserController.update);
 PrivateRoutes.delete('/users/:id', UserController.deleteUm);
-PrivateRoutes.delete('/users/', UserController.deleteTodos);    
+PrivateRoutes.delete('/users/', UserController.deleteTodos);
+
 
 //PRODUTOS
-app.get('/products', ProductController.list); 
-app.get('/products/:id', ProductController.listUm);
-PrivateRoutes.post('/products', ProductController.create);
+app.get('/products', ProductController.list);
+app.get('/products', ProductController.listUm);
+PrivateRoutes.post('/products', UserCreateValidation, ProductController.create);
 PrivateRoutes.put('/products/:id', ProductController.update);
 PrivateRoutes.delete('/products/', ProductController.deleteTodos);
 PrivateRoutes.delete('/products/:id', ProductController.deleteUm);
 
 //CATEGORIA
 app.get('/category', CategoryController.list);
-app.get('/category/:id', CategoryController.listUm);
+app.get('/category', CategoryController.listUm);
 PrivateRoutes.post('/category', CategoryController.create);
 PrivateRoutes.put('/category/:id', CategoryController.update);
 PrivateRoutes.delete('/category/:id', CategoryController.deleteUm);
 PrivateRoutes.delete('/category/', CategoryController.deleteTodos);
-
-
-//IMAGENS
-app.get('/images', ImageController.listar);
-app.get('/images', ImageController.listarUm);
-PrivateRoutes.post('images', ImageController.imageCreate);
-PrivateRoutes.put('images', ImageController.alterar);
-PrivateRoutes.delete('image', ImageController.deletarUm);
-PrivateRoutes.delete('images', ImageController.deletarTudo);
-
 
 app.use(PrivateRoutes);
 app.listen(3000);

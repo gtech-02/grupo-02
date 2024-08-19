@@ -1,8 +1,11 @@
 const connection = require('./connection');
 
-const UserModel = require('../models/UserModel');
-const CategoryModel = require('../models/CategoryModel');
-const ProductModel = require('../models/ProductModel');
 
-connection.sync({force: true});
+require('../models/UserModel');
+require('../models/CategoryModel');
+require('../models/ProductModel');
+require('../models/ImageModel');
+require('../models/ProductCategoryModel');
 
+
+connection.sync({ force: true });

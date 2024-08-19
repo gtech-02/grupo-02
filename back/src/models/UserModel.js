@@ -3,8 +3,8 @@ const { DataTypes } = require('sequelize');
 
 let UserModel = connection.define("users", {
     firstname: {
-        type: DataTypes.STRING(50), // VARCHAR(50)
-        allowNull: false, // NOT NULL
+        type: DataTypes.STRING(50),
+        allowNull: false, 
     }, 
     surname: {
         type: DataTypes.STRING(50),
