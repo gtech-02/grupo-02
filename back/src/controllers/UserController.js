@@ -11,6 +11,7 @@ const UserController = {
             UserModel.create(request.body);
             messageReturn = 'Usuario criado com sucesso!'
 
+
             response.status(201);
             return response.json({
                 message: messageReturn
@@ -20,6 +21,9 @@ const UserController = {
                 message: 'Erro ao criar usuario'
             });
         }
+
+
+           
     },
 
     async login(request, response) {
@@ -71,6 +75,7 @@ const UserController = {
             })
         }
 
+
     },
 
     async listUm(request, response) {
@@ -89,6 +94,7 @@ const UserController = {
                 message: 'Erro ao localizar usuário'
             });
         }
+
     },
 
     async update(request, response) {
@@ -96,7 +102,9 @@ const UserController = {
             let id = request.params.id;
 
             UserModel.update(request.body, {
+
                 where: { id }
+
             });
 
             return response.json({
@@ -135,7 +143,9 @@ const UserController = {
                 where: { id }
             });
 
+
             response.status(204);
+
             return response.json({
                 message: "Usuario deletado com sucesso"
             })

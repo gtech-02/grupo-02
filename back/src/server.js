@@ -22,6 +22,7 @@ PrivateRoutes.put('/users/:id', UserController.update);
 PrivateRoutes.delete('/users/:id', UserController.deleteUm);
 PrivateRoutes.delete('/users/', UserController.deleteTodos);
 
+
 //PRODUTOS
 app.get('/products', ProductController.list);
 app.get('/products', ProductController.listUm);

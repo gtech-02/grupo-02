@@ -1,11 +1,12 @@
 const connection = require('../database/connection');
 const { DataTypes } = require('sequelize');
 
+
 const ProductModel = connection.define("Product", {
     enabled: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
-    },
+
     name: {
         type: DataTypes.STRING(50),
         allowNull: false,
