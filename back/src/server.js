@@ -34,13 +34,10 @@ PrivateRoutes.delete('/products/:id', ProductController.deleteUm);
 
 //CATEGORIA
 app.get('/category', CategoryController.list);
-<<<<<<< HEAD
 app.get('/category', CategoryController.listUm);
 PrivateRoutes.post('/category', UserCreateValidation, CategoryController.create);
-=======
 app.get('/category/:id', CategoryController.listUm);
 PrivateRoutes.post('/category', CategoryController.create);
->>>>>>> victor
 PrivateRoutes.put('/category/:id', CategoryController.update);
 PrivateRoutes.delete('/category/:id', CategoryController.deleteUm);
 PrivateRoutes.delete('/category/', CategoryController.deleteTodos);
