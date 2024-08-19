@@ -39,5 +39,13 @@ PrivateRoutes.put('/category/:id', CategoryController.update);
 PrivateRoutes.delete('/category/:id', CategoryController.deleteUm);
 PrivateRoutes.delete('/category/', CategoryController.deleteTodos);
 
+//IMAGENS
+app.get('/images', ImageController.listar);
+app.get('/images', ImageController.listarUm);
+PrivateRoutes.post('images', ImageController.imageCreate);
+PrivateRoutes.put('images', ImageController.alterar);
+PrivateRoutes.delete('image', ImageController.deletarUm);
+PrivateRoutes.delete('images', ImageController.deletarTudo);
+
 app.use(PrivateRoutes);
 app.listen(3000);
