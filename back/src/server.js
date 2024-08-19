@@ -8,6 +8,7 @@ const ProductController = require('./controllers/ProductController');
 const CategoryController = require('./controllers/CategoryController');
 const UserCreateValidation = require("./middleware/UserCreateValidation");
 const JwtVerifyToken = require('./middleware/JwtVerifyToken');
+const ImageController = require('./controllers/ImageController');
 
 const PrivateRoutes = express.Router();
 PrivateRoutes.use(JwtVerifyToken);

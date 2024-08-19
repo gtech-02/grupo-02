@@ -8,12 +8,10 @@ import Layout from "./Layout"
 const HomePage = () => {
     return (
         <Layout>
-            <main>
-                <Gallery />
-            </main>
-            <ProductCards />
-            <Section props={{ title: "Produtos em alta", display: "flex", justfy: "space-between" }}>
-                <ProductListing />
+            <HomeCarrosel/>
+            <ProductCards/>
+            <Section props={{title:"Produtos em alta", display:"flex", justfy:"space-between"}}>
+                <ProductListing/>
             </Section>
         </Layout>
     )
